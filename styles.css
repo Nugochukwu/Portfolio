@@ -119,8 +119,8 @@
       padding: 30px;
       margin: 10px;
       transition: transform 0.5s ease-in-out;
-  z-index: 1; /* Ensure hovered element appears on top */
-  position: relative; /* Needed for precise centering */
+      z-index: 1; /* Ensure hovered element appears on top */
+      position: relative; /* Needed for precise centering */
     }
     .content-list ul div:hover{
       transform: scale(1.5);
@@ -144,9 +144,20 @@ transform: translateY(-20%);
 }
 
 @media (max-width: 768px) {
-
+  .content-list ul div{
+    background-color: rgb(251, 242, 225);
+    padding: 10px;
+    margin: 5px;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1; /* Ensure hovered element appears on top */
+    position: relative; /* Needed for precise centering */
+  }
   .content-list ul div:hover{
-    transform: scale(1.5);
+    transform: scale(2.5);
     z-index: 10; /* Bring to the foreground */
+  }
+  img {
+    height: auto;
+    width: 100px;
   }
 }
