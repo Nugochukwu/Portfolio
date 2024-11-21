@@ -20,6 +20,7 @@
       width: 100vh;  Full viewport width */
       font-family: Arial, sans-serif;
       background-color: var(--background-color);
+      max-width: 800vh;
     }
     .div-header{
       text-align: left;
