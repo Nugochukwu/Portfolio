@@ -28,7 +28,7 @@ const images = document.querySelectorAll(".clickable-image");
 images.forEach((image) => {
   image.addEventListener("click", () => {
     modal.style.display = "flex"; // Ensure the modal uses Flexbox
-    modalImage.src = "images/PFP.jpg"; // Set modal image source to the clicked image's source
+    modalImage.src = image.src; // Set modal image source to the clicked image's source
   });
 });
 

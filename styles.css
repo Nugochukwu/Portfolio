@@ -54,10 +54,9 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
       padding: 2vh;
     }
-    footer {
+    .div-footer {
       display: flex;
       justify-content: center;
-      align-items: center;
       margin-top: 20px;
       padding: 2vh;
       background-color: var(--section-color); /* White background */
@@ -65,11 +64,19 @@
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       
     }
+    .div-footer ul{
+      margin: 20px;
+      display: flex;
+    }
+    .div-footer ul div{
+      margin-left: 20px;
+    }
     img {
       box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
       
       
       width: 200px;
+      height: 180px;
     }
 .profile{
   display: flex;
@@ -116,29 +123,28 @@
 
 .content-list{
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  
+  color: var(--text-color);
 }
     .content-list ul{
-      
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      overflow:scroll
+      overflow-x: scroll;
+      
+
     }
     
     .content-list ul div{
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      padding: 10px;
-      margin: 0px;
       transition: transform 0.5s ease-in-out;
       z-index: 1; /* Ensure hovered element appears on top */
+      margin: 20px;
       position: relative; /* Needed for precise centering */
     }
     .content-list ul div:hover{
       transform: scale(1.1);
       z-index: 10; /* Bring to the foreground */
+    }
+    .content-list-with-Desc{
+      display: flex;
     }
 
 /* Dark Theme */
@@ -146,8 +152,8 @@
 body.dark {
   transition: background-color 0.7s ease-in-out, color 0.7s ease;
   
-  --background-color: #616472;
-  --section-color: #8d92ae;
+  --background-color: #161617;
+  --section-color: #424557;
   --text-color: #ffffff;
   
 }
@@ -162,7 +168,6 @@ body.dark {
   width: 100%; /* Full width of the viewport */
   height: 100%; /* Full height of the viewport */
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  display: flex; /* Use Flexbox for centering */
   justify-content: center;
   align-items: center;
   overflow: auto; /* Allow scrolling if necessary */
