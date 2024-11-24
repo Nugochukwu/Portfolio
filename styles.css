@@ -29,16 +29,16 @@ color: #4caf50;
       align-items: center;
       /*height: 150vh; /* Full viewport height 
       width: 100vh;  Full viewport width */
-      max-width: 1500px;
-  margin-left: 15%;
       font-family: Arial, sans-serif;
       background-color: var(--background-color);
       
     }
     .div-header{
       font-size: larger;
-      text-align: center;
+      text-align: left;
       margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 80px;
       color: var(--text-color);
     }
     .div-body{
