@@ -42,7 +42,7 @@ color: #4caf50;
       text-align: left;
       margin-top: 20px;
       margin-bottom: 20px;
-      margin-left: 80px;
+      margin-left: 30px;
       color: var(--text-color);
     }
     .div-body{
@@ -275,12 +275,9 @@ transform: translateY(-20%);
 }
 
 @media (max-width: 768px) {
-  .content-list ul div{
-    padding: 10px;
-    margin: 5px;
-    transition: transform 0.5s ease-in-out;
-    z-index: 1; /* Ensure hovered element appears on top */
-    position: relative; /* Needed for precise centering */
+  body{
+    max-width: 1500px; /* Adjust this value to your desired width */
+    margin: 0 auto;   /* Centers the content on the page */
   }
   .progress-container {
     width: 150px;
