@@ -20,7 +20,7 @@
       transition: background-color 0.7s ease-in-out, color 0.7s ease;
       
       --background-color: #000000e7;
-      --section-color: #504e53a3;
+      --section-color: rgba(43, 41, 41, 0.3);
       --ui-color: #424557;
       --text-color: #ffffff;
       --subText-color: rgb(196, 196, 196);
@@ -193,8 +193,9 @@ display: flex;
   margin: 20px;
 }
 button{
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
-  text-align: left;
+  justify-content: center;
   border-radius: 5%;
   color: rgb(255, 255, 255);
   padding: 5px;
@@ -345,7 +346,6 @@ transform: translateY(-20%);
   }
   img {
     box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border: solid 5px rgb(255, 255, 255);
     width: 300px;
     height: 280px;
   }
