@@ -33,6 +33,7 @@ a{
   
   border-radius: 20px;
   padding: 10px;
+  margin: 10px;
 }
 .nav{box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); /* Subtle shadow */}
 a:hover{
@@ -86,6 +87,9 @@ color: plum;
       font-size: 40px;
       text-align: center;
       color: var(--header-color);
+    }
+    .div-header a{
+font-size: medium;
     }
     .div-header span{
       color: plum;
@@ -160,6 +164,9 @@ color: plum;
 .profile-description ul{
   padding: 25px;
 display: flex;
+}
+.profile-description li{
+  list-style: none;
 }
 .progress-container {
   width: 200px;
@@ -366,11 +373,12 @@ transform: translateY(-20%);
   .third img {
     max-width: 90%; /* Make the image width not exceed its container */
     height: auto;    /* Maintain the aspect ratio */
+    max-height: 65%;
     margin: 10px;
   }
 
 div {
-    max-width: 768px;
+    max-width: 600px;
   }
   header {
     padding: 100px;
