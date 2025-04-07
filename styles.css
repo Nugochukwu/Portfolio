@@ -30,10 +30,11 @@
 a{
   text-decoration: none;
   color: var(--text-color);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
 }
+.nav{box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); /* Subtle shadow */}
 a:hover{
 color: plum;
 }
@@ -107,20 +108,26 @@ color: plum;
       margin-left: 20px;
     }
     img {
-      box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      
-      
+      box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
       max-width: 800px;
       max-height: 500px;
+    }
+    .clickableImage{
       transition: transform 0.3s ease-in-out ;
     }
-    img:hover
-    {
+    .clickableImage:hover{
       z-index: 10;
       box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
       transform: translateY(-20px);
     }
-    
+    .clickable-image{
+      transition: transform 0.3s ease-in-out ;
+    }
+    .clickable-image:hover{
+      z-index: 10;
+      transform: translateY(-20px);
+      box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+    }
 .profile{
   color: var(--text-color);
   border-top: solid 5px var(--background-color);
@@ -349,4 +356,24 @@ transform: translateY(-20%);
     width: 300px;
     height: 280px;
   }
+  .longBanner div{
+    max-width: 500px;
+    padding-top: 20px;
+    margin: 0;
+}
+    .first img,
+  .second img,
+  .third img {
+    max-width: 90%; /* Make the image width not exceed its container */
+    height: auto;    /* Maintain the aspect ratio */
+    margin: 10px;
+  }
+
+div {
+    max-width: 768px;
+  }
+  header {
+    padding: 100px;
+  }
+
 }
