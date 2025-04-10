@@ -223,12 +223,11 @@ button{
 }
     .content-list ul{
       border-left: solid 10px var(--background-color);
-  border-right: solid 10px var(--background-color);
-  border-radius: 20px;
+      border-right: solid 10px var(--background-color);
+      border-radius: 20px;
       display: flex;
       overflow-x: auto; /* Enable horizontal scrolling when content overflows */
       overflow-y: hidden; /* Hide vertical overflow */
-      
       scrollbar-width: thin;
       scrollbar-color: var(--ui-color) #f1f1f1; /* Thumb and track colors */
     }
@@ -348,6 +347,19 @@ transform: translateY(-20%);
     margin: 10px 0;
     --progress: 0%; /* Default to 0% */
   }
+  .content-list{
+   justify-content: center;
+   max-width: 700px;
+  }
+  .content-list ul{
+    width: 100%;
+    height: auto;
+     
+  }
+  .content-list img{
+    width: 200px;
+height: 150px;
+  }
   .skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -364,16 +376,17 @@ transform: translateY(-20%);
     height: 280px;
   }
   .longBanner div{
-    max-width: 500px;
+    max-width: 300px;
+    max-height: 350px;
     padding-top: 20px;
-    margin: 0;
+    margin: 10px;
 }
     .first img,
   .second img,
   .third img {
     max-width: 90%; /* Make the image width not exceed its container */
     height: auto;    /* Maintain the aspect ratio */
-    max-height: 65%;
+    max-height: 60%;
     margin: 10px;
   }
 
