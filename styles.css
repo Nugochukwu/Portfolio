@@ -5,7 +5,8 @@
 :root {
   --background-color: #ffffff;
   --section-color: #ffffff;
-  --ui-color: rgb(118, 125, 126);
+  --ui-color: rgb(255, 255, 255);
+  --ui-secondary-color: rgb(85, 94, 94);
   --text-color: #000000;
   --subText-color: rgb(94, 94, 94);
   --header-color: #ffffff;
@@ -22,22 +23,26 @@
       --background-color: #000000e7;
       --section-color: rgba(43, 41, 41, 0.3);
       --ui-color: #424557;
+      --ui-secondary-color: rgb(0, 0, 0);
       --text-color: #ffffff;
       --subText-color: rgb(196, 196, 196);
       --header-color: rgb(255, 255, 255);
       
-    }  
+    }  .nav{box-shadow: 0 1px 6px rgba(0, 0, 0, 0.9); /* Subtle shadow */}
+
 a{
   text-decoration: none;
+  background-color: var(--ui-color);
   color: var(--text-color);
-  
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  transition: padding 0.3s ease;
 }
-.nav{box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); /* Subtle shadow */}
+
 a:hover{
 color: plum;
+padding: 15px;
 }
     body {
       
@@ -116,14 +121,7 @@ font-size: medium;
       max-width: 800px;
       max-height: 500px;
     }
-    .clickableImage{
-      transition: transform 0.3s ease-in-out ;
-    }
-    .clickableImage:hover{
-      z-index: 10;
-      box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
-      transform: translateY(-20px);
-    }
+    
     .clickable-image{
       transition: transform 0.3s ease-in-out ;
     }
@@ -132,6 +130,14 @@ font-size: medium;
       transform: translateY(-20px);
       box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
     }
+
+.nav-bar{
+  margin: 10px;
+  padding: 10px;
+}
+.nav-bar div{
+  margin-top: 40px;
+}
 .profile{
   color: var(--text-color);
   border-top: solid 5px var(--background-color);
@@ -170,7 +176,7 @@ display: flex;
 }
 .progress-container {
   width: 200px;
-  height: 20px;
+  height:15px;
   background-color: #e0e0e0;
   border-radius: 10px;
   overflow: hidden;
@@ -179,16 +185,19 @@ display: flex;
 }
 
 .progress-bar {
+  margin: 0px;
+  padding: 0px;
+
   width: var(--progress); /* Dynamically set width */
   height: 100%;
   background-color: #4caf50;
   border-radius: 10px;
-  transition: width 1.5s ease-out; /* Smooth animation */
+  transition:  1.5s ease-out; /* Smooth animation */
 }
 .skills{
   border-top: solid 10px var(--background-color);
   border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  
   margin-top: 100px;
   color: var(--text-color);
 }
@@ -222,21 +231,19 @@ button{
   color: var(--text-color);
 }
     .content-list ul{
-      border-left: solid 10px var(--background-color);
-      border-right: solid 10px var(--background-color);
-      border-radius: 20px;
       display: flex;
       overflow-x: auto; /* Enable horizontal scrolling when content overflows */
       overflow-y: hidden; /* Hide vertical overflow */
       scrollbar-width: thin;
-      scrollbar-color: var(--ui-color) #f1f1f1; /* Thumb and track colors */
+      scrollbar-color: var(--ui-secondary-color-color) #f1f1f1; /* Thumb and track colors */
     }
     
     .content-list ul div{
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      
       transition: transform 0.5s ease-in-out;
       z-index: 1; /* Ensure hovered element appears on top */
-      margin: 2px;
+      margin: 1px;
+      
       position: relative; /* Needed for precise centering */
     }
     .content-list-with-Desc{
@@ -323,6 +330,14 @@ button{
   to {
     opacity: 1;
   }
+}
+@keyframes growS{
+0%{
+  transform: scale(1);
+}
+100%{
+  transform: scale(1.5);
+}
 }
 
 @keyframes slideUp {

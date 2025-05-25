@@ -1,0 +1,61 @@
+
+
+
+
+
+
+
+
+
+
+<section class="content-list">
+  <h1>Experience</h1>
+  <ul>
+    <div class="content-list-with-Desc2">
+      <h2>
+        FEDERAL AIRPORTS AUTHORITY (TECH INTERN) (2021)
+      </h2>
+      
+      <ol>
+        <div>
+          <h3>
+            • Provided technical assistance to professionals during inspections,
+enhancing efficiency in the inspection process.</h3>
+          </div>
+        <div>
+          <h3>
+            • Provided support during inspections of the airport power systems.</h3>
+          </div>
+        <div>
+          <h3>
+            • Performed routine inspections of the airport’s fire truck systems to
+ensure functionality during emergencies.
+</h3>
+          </div>
+      <ol>
+    </div>
+    <div class="content-list-with-Desc2">
+      <h2>
+        BLUE TAG TECHNOLOGIES (TECH INTERN) (2024)
+      </h2>
+      
+      <ol>
+        <div>
+          <h3>
+            • Participated in Joint web development and training sessions with
+            supervisor and colleagues.
+            </h3>
+          </div>
+        <div>
+          <h3>
+            • Setup meetings for progress reports on current projects. </h3>
+          </div>
+        <div>
+          <h3>
+            • Developed error-free and optimized codebases.
+          </h3>
+          </div>
+      <ol>
+    </div>
+  </ul>
+</section>
