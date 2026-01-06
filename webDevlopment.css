@@ -1,0 +1,67 @@
+div{
+    margin: 0 auto;
+}
+.div-body{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+.longBanner{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+
+}
+.longBanner div{
+    padding-top: 20px;
+    max-width: 400px;
+    max-height: 700px;
+    margin: 20px;
+}
+.first img{
+    top: -20px;
+    width: 85%;
+    height: 100%;
+}
+.second img{
+    top: -20px;
+    width: 85%;
+    height: 100%;
+}
+.third img{
+    top: -20px;
+    width: 85%;
+    height: 100%;
+}
+
+.content-list{
+  padding: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: var(--text-color);
+}
+    .content-list ul{
+      display: flex;
+      overflow-x: auto; /* Enable horizontal scrolling when content overflows */
+      overflow-y: hidden; /* Hide vertical overflow */
+      scrollbar-width: thin;
+      scrollbar-color: var(--ui-secondary-color-color) #f1f1f1; /* Thumb and track colors */
+    }
+    
+    .content-list ul div{
+      
+      transition: transform 0.5s ease-in-out;
+      z-index: 1; /* Ensure hovered element appears on top */
+      margin: 1px;
+      
+      position: relative; /* Needed for precise centering */
+    }
+    .content-list-with-Desc{
+      display: flex;
+    }
+    .content-list-with-Desc2 ol div{
+      width: 500px;
+    }
+    .content-list img{
+      width: 160px;
+  height: 150px;
+    }
+
