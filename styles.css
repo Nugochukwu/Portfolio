@@ -4,6 +4,7 @@
 
 :root {
   --background-color: #ffffff;
+  --border-color:rgb(255, 242, 255);
   --section-color: #ffffff;
   --ui-color: rgb(255, 255, 255);
   --ui-secondary-color: rgb(85, 94, 94);
@@ -21,6 +22,7 @@
       transition: background-color 0.7s ease-in-out, color 0.7s ease;
       
       --background-color: #000000e7;
+      --border-color: rgb(255, 255, 255);
       --section-color: rgba(43, 41, 41, 0.3);
       --ui-color: #424557;
       --ui-secondary-color: rgb(0, 0, 0);
@@ -35,108 +37,126 @@ a{
   background-color: var(--ui-color);
   color: var(--text-color);
   border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
   transition: padding 0.3s ease;
+  padding: 10px;
+  
 }
 
+li a{
+  padding: 50px;
+
+}
 a:hover{
 color: plum;
 padding: 15px;
 }
-    body {
-      
-      justify-content: center;
-      align-items: center;
-      /*height: 150vh; /* Full viewport height 
-      width: 100vh;  Full viewport width */
-       /* Adjust this value to your desired width */
-      margin: 0 auto;   /* Centers the content on the page */
-      font-family: Arial, sans-serif;
-      background-color: var(--background-color);
-      
-    }
-    .div-body{
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .div-body{
-      /* Center text horizontally */
-      background-color:  var(--section-color); /* White background */
-      transition: background-color 1.5s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      padding: 20px;
-    }
-    .div-body h1 {
-      text-align: left;
-      font-size: 2rem;
-      color: var(--text-color); /* Dark gray text */
-      margin-bottom: 10px;
-    }
 
-    .div-body p {
-      font-size: 1rem;
-      color: var(--text-color); /* Medium gray text */
-    }
-    
-    header {
-      background-image:url(images/Him2.png);
-      background-position: center;
-      background-size:cover;
-      background-color: var(--section-color); /* White background */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      padding: 300px;
-    }
-    .div-header{
-      font-size: 40px;
-      text-align: center;
-      color: var(--header-color);
-    }
-    .div-header a{
-font-size: medium;
-    }
-    .div-header span{
-      color: plum;
-    }
-    .div-footer {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      padding: 2vh;
-      background-color: var(--section-color); /* White background */
-      color: var(--text-color);
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      
-    }
-    .div-footer ul{
-      margin: 20px;
-      display: flex;
-    }
-    .div-footer ul div{
-      margin-left: 20px;
-    }
-    img {
-      box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
-      max-width: 800px;
-      max-height: 500px;
-    }
-    
-    .clickable-image{
-      transition: transform 0.3s ease-in-out ;
-    }
-    .clickable-image:hover{
-      z-index: 10;
-      transform: translateY(-20px);
-      box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
-    }
-
-.nav-bar{
-  margin: 10px;
-  padding: 10px;
+body {
+  
+  justify-content: center;
+  align-items: center;
+  /*height: 150vh; /* Full viewport height 
+  width: 100vh;  Full viewport width */
+    /* Adjust this value to your desired width */
+  margin: 0 auto;   /* Centers the content on the page */
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  
 }
-.nav-bar div{
-  margin-top: 40px;
+.div-body{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.div-body{
+  /* Center text horizontally */
+  background-color:  var(--section-color); /* White background */
+  transition: background-color 1.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+}
+.div-body h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: var(--text-color); /* Dark gray text */
+  margin-bottom: 10px;
+}
+.div-body h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--text-color); /* Dark gray text */
+  margin-bottom: 10px;
+}
+.div-body h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-color); /* Dark gray text */
+  margin-bottom: 10px;
+}
+
+.div-body p {
+  font-size: 1rem;
+  color: var(--text-color); /* Medium gray text */
+}
+
+header {
+  background-image:url(images/Him2.png);
+  background-position: center;
+  background-size:cover;
+  background-color: var(--section-color); /* White background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 300px;
+}
+.div-header{
+  font-size: 40px;
+  text-align: center;
+  color: var(--header-color);
+}
+.div-header a{
+font-size: medium;
+}
+.div-header span{
+  color: plum;
+}
+.div-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 2vh;
+  background-color: var(--section-color); /* White background */
+  color: var(--text-color);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.div-footer ul{
+  margin: 20px;
+  display: flex;
+}
+.div-footer ul div{
+  margin-left: 20px;
+}
+img {
+  box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+  max-width: 800px;
+  max-height: 500px;
+}
+
+.clickable-image{
+  transition: transform 0.3s ease-in-out ;
+}
+.clickable-image:hover{
+  z-index: 10;
+  transform: translateY(-20px);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.highlight{
+  color: plum;
+  font-weight: bold;
+}
+.highlight-big{
+  font-size: 1.3em;
+  color: plum;
+  font-weight: bold;
 }
 .profile{
   color: var(--text-color);
@@ -144,10 +164,7 @@ font-size: medium;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 .profile-header{
-  gap: 20%;
-  margin: 10px;
-  max-width: 800px;
-  padding-top: 20px;
+  
   font-size: 15px;
 }
 .profile .subText{
@@ -164,16 +181,50 @@ font-size: medium;
 
 
 .profile img{
-      width: 380px;
-      height: 460px;
+  width: 380px;
+  height: 460px;
 }
-.profile-description ul{
-  padding: 25px;
-display: flex;
+
+.profile-description {
+  max-width: 400px;
+  margin: 0 auto;
 }
-.profile-description li{
-  list-style: none;
+
+.profile-description ul {
+ 
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  list-style: none;      /* remove bullets */
+  padding: 0;
+  margin: 0;
 }
+
+.profile-description li {
+  margin-bottom: 12px;
+}
+
+.profile-description .nav {
+  display: block;
+  padding: 150px 80px;
+  text-decoration: none;
+  color: #333;
+  background-color: rgb(238, 212, 238);
+  border: solid 10px var(--border-color);
+  border-radius: 6px;
+  transition: 0.4s ease-in;
+}
+
+
+.profile-description .nav:hover {
+  background: #ffffff;
+  color: #000;
+  transform: scale(1.2);
+}
+
+
+
+
 .progress-container {
   width: 200px;
   height:15px;
@@ -244,32 +295,32 @@ button{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   color: var(--text-color);
 }
-    .content-list ul{
-      display: flex;
-      overflow-x: auto; /* Enable horizontal scrolling when content overflows */
-      overflow-y: hidden; /* Hide vertical overflow */
-      scrollbar-width: thin;
-      scrollbar-color: var(--ui-secondary-color-color) #f1f1f1; /* Thumb and track colors */
-    }
-    
-    .content-list ul div{
-      
-      transition: transform 0.5s ease-in-out;
-      z-index: 1; /* Ensure hovered element appears on top */
-      margin: 1px;
-      
-      position: relative; /* Needed for precise centering */
-    }
-    .content-list-with-Desc{
-      display: flex;
-    }
-    .content-list-with-Desc2 ol div{
-      width: 500px;
-    }
-    .content-list img{
-      width: 400px;
-    height: 300px;
-    }
+.content-list ul{
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling when content overflows */
+  overflow-y: hidden; /* Hide vertical overflow */
+  scrollbar-width: thin;
+  scrollbar-color: var(--ui-secondary-color-color) #f1f1f1; /* Thumb and track colors */
+}
+
+.content-list ul div{
+  
+  transition: transform 0.5s ease-in-out;
+  z-index: 1; /* Ensure hovered element appears on top */
+  margin: 1px;
+  
+  position: relative; /* Needed for precise centering */
+}
+.content-list-with-Desc{
+  display: flex;
+}
+.content-list-with-Desc2 ol div{
+  width: 500px;
+}
+.content-list img{
+  width: 400px;
+height: 300px;
+}
 
 /* Dark Theme */
 
@@ -315,9 +366,7 @@ button{
   color: #bbb;
   text-decoration: none;
 }
-.nav{
-  align-items: left;
-}
+
 .terminal {
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -345,13 +394,15 @@ button{
     opacity: 1;
   }
 }
-@keyframes growS{
+
+@keyframes grow{
 0%{
   transform: scale(1);
 }
 100%{
   transform: scale(1.5);
 }
+
 }
 
 @keyframes slideUp {
@@ -421,9 +472,30 @@ height: 150px;
 
 .div-body {
     max-width: 600px;
+    margin: 0 auto;
   }
   header {
     padding: 100px;
   }
+.profile-description {
+  max-width: 200px;
+  margin: 0 auto;
+}
 
+.profile-description .nav {
+  padding: 100px 50px;
+  text-decoration: none;
+  color: #333;
+  background-color: rgb(238, 212, 238);
+  border: solid 10px var(--border-color);
+  border-radius: 6px;
+  transition: 0.4s ease-in;
+}
+.profile-description ul {
+  list-style: none;      /* remove bullets */
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center;
+}
 }
