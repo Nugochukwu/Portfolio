@@ -7,8 +7,8 @@
   --border-color:rgb(243, 216, 243);
   --container-color: rgb(255, 247, 255);
   --section-color: #ffffff;
-  --ui-color: rgb(183, 157, 206);
-  --ui-hover-color: #e17fff;
+  --ui-color: rgb(243, 229, 255);
+  --ui-hover-color: #ffffff;
   --ui-secondary-color: rgb(85, 94, 94);
   --text-color: #000000;
   --subText-color: rgb(94, 94, 94);
@@ -24,11 +24,11 @@
       transition: background-color 0.7s ease-in-out, color 0.7s ease;
       
       --background-color: #000000e7;
-      --border-color: rgb(255, 255, 255);
+      --border-color: rgb(44, 27, 49);
       --container-color: rgb(31, 27, 31);
       --section-color: rgba(43, 41, 41, 0.3);
-      --ui-color: #424557;
-      --ui-hover-color: #ddd1ea;
+      --ui-color: #574256;
+      --ui-hover-color: #684b87;
       --ui-secondary-color: rgb(0, 0, 0);
       --text-color: #ffffff;
       --subText-color: rgb(196, 196, 196);
@@ -228,18 +228,19 @@ img {
   display: block;
   padding: 150px 80px;
   text-decoration: none;
-  color: #333;
-  background-color: rgb(238, 212, 238);
+  color: var(--text-color);
+  background-color: var(--ui-color);
   border: solid 10px var(--border-color);
   border-radius: 6px;
-  transition: transform 0.5s cubic-bezier(.34, 1.56, .64, 1);
+  transition: transform 0.7s cubic-bezier(.34, 1.56, .64, 1);
 }
 
 
 .profile-description .nav:hover {
-  background: #ffffff;
+  background: var(--ui-hover-color);
+  border: var(--ui-hover-color);
   color: #000;
-  transform: scale(1.2) ;
+  transform: scale(1.4) ;
 }
 
 
@@ -309,6 +310,28 @@ button{
 }
 .alert2 h1{
   text-align: center;
+}
+.content{
+  margin: 0 auto;
+}
+.content ul{
+  display: block;
+  gap: 20px;
+  padding: 10px;
+  list-style: none;
+
+  overflow-x: auto;
+  overflow-y: hidden; 
+  scrollbar-color: var(--ui-secondary-color-color) #f1f1f1; /* Thumb and track colors */
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+.content ul li{
+  flex: 0 0 auto;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .content-list{
   padding: 50px;
@@ -443,8 +466,8 @@ transform: translateY(-20%);
   .profile-description .nav {
   padding: 200px 50px;
   text-decoration: none;
-  color: #333;
-  background-color: rgb(238, 212, 238);
+  color: var(--text-color);
+  background-color: var(--ui-color);
   border: solid 10px var(--border-color);
   border-radius: 6px;
   transition: transform 0.5s cubic-bezier(.34, 1.56, .64, 1);
@@ -478,7 +501,7 @@ transform: translateY(-20%);
   }
   .content-list img{
     width: 200px;
-height: 150px;
+    height: 150px;
   }
   .skills ul {
     display: flex;
@@ -530,10 +553,10 @@ height: 150px;
 }
 
 .profile-description .nav {
-  padding: 200px 35px;
+  padding: 200px 15px;
   text-decoration: none;
-  color: #333;
-  background-color: rgb(238, 212, 238);
+  color: var(--text-color);
+  background-color: var(--ui-color);
   border: solid 10px var(--border-color);
   border-radius: 6px;
   transition: transform 0.5s cubic-bezier(.34, 1.56, .64, 1);
